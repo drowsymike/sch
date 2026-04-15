@@ -21,6 +21,7 @@ CFLAGS += -Iplatform/cmsis/CMSIS/Include
 CFLAGS += -Iplatform/cmsis/CMSIS/Device/ST/STM32F4xx/Include
 CFLAGS += -I../../sch/inc
 CFLAGS += -I../../sch/src
+CFLAGS += -I../../sch/port/stm32f4xx
 CFLAGS += $(DEFS)
 
 ASFLAGS = $(MCU) $(OPT)
@@ -50,6 +51,7 @@ app/src/sysmem.c \
 ../../sch/src/sch.c \
 ../../sch/port/stm32f4xx/sch_find_most_significant_task.s \
 ../../sch/port/stm32f4xx/sch_context_change.s \
+../../sch/port/stm32f4xx/sch_event_management.c \
 
 all: $(TARGET).elf
 

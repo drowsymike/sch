@@ -14,6 +14,8 @@
  * @brief Handler for an error related to the 
  * scheduler's handling of process metadata
  * 
+ * @note You have to insert your code here
+ * 
  * @return void
  */
 __WEAK SCH_NORETURN_FUNC_ATTRIBUTE void sch_fault_handler(void) {

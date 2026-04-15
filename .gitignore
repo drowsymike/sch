@@ -1,3 +1,6 @@
 *.hex
 *.bin
 *.elf
+examples/stm32f4x/compile_commands.json
+.cache
+compile_commands.json

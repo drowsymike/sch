@@ -14,7 +14,19 @@
 extern "C" {
 #endif
 
+/**
+ * @brief the SCH_MAX_QUANTITY_OF_TASKS macros 
+ *   defines the max quantity of tasks
+ */
 #define SCH_MAX_QUANTITY_OF_TASKS 3
+
+/**
+ * @brief mode of SCH arbitration. There're options:
+ *   Manual (SCH_ARBITRATION_MODE_MANUAL)
+ *   Systick (SCH_ARBITRATION_MODE_SYSTICK)
+ * 
+ */
+#define SCH_ARBITRATION_MODE SCH_ARBITRATION_MODE_MANUAL
 
 #ifdef __cplusplus
 }

@@ -1,6 +1,8 @@
 #ifndef SCH_EVENT_MANAGEMENT_H
 #define SCH_EVENT_MANAGEMENT_H
 
+#include "sch_common.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -14,6 +16,8 @@ typedef struct {
     int16_t first_data;
     int16_t second_data;
 } sch_event;
+
+void sch_event_management(sch_task_t* sch_task);
 
 #ifdef __cplusplus
 }

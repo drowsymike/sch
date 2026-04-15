@@ -22,6 +22,10 @@ sch_context_change_interrupt_check:
 .type sch_call_dispatch, %function
 .global sch_call_dispatch
 sch_call_dispatch:
+    @ Copying the R-registers. Must be founded out how to do that!
+    @ mrs r0, psp
+    @ stmdb r0!, {r4-r11}
+    @ msr psp, r0
     ldr r1, =sch_task_registry
     lsl r0, r0, #2
     add r0, r1, r0

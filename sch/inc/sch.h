@@ -18,7 +18,6 @@ extern "C" {
 #include <stdint.h>
 
 #include "sch_config.h"
-#include "sch_assertion.h"
 #include "sch_context_change.h"
 #include "sch_common.h"
 #include "sch_task_management.h"
