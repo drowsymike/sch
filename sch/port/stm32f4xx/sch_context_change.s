@@ -6,6 +6,23 @@
 .equ __sch_icsr, (__sch_scs_base + __sch_icsr_offset)
 .equ __sch_icsr_pendvset, (1 << 28)
 
+.section .text.PendSV_Handler
+.global PendSV_Handler
+.type PendSV_Handler, %function
+
+@ -----------------------------------------------------------------------------
+
+PendSV_Handler:
+    push {lr}
+    ldr r0, =sch_system_tasks_ready_set
+    ldr r0, [r0
+    bl sch_find_most_significant_task
+    cbz r0, .exit_pendsv
+    sub r0, r0, #1
+    bl sch_call_dispatch[cite: 17]
+.exit_pendsv:
+    pop {pc}
+
 @ -----------------------------------------------------------------------------
 
 .section .data
