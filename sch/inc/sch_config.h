@@ -16,17 +16,26 @@ extern "C" {
 
 /**
  * @brief the SCH_MAX_QUANTITY_OF_TASKS macros 
- *   defines the max quantity of tasks
+ * defines the max quantity of tasks
+ * 
  */
 #define SCH_MAX_QUANTITY_OF_TASKS 3
 
 /**
  * @brief mode of SCH arbitration. There're options:
- *   Manual (SCH_ARBITRATION_MODE_MANUAL)
- *   Systick (SCH_ARBITRATION_MODE_SYSTICK)
+ * Manual (SCH_ARBITRATION_MODE_MANUAL)
+ * Systick (SCH_ARBITRATION_MODE_SYSTICK)
  * 
  */
 #define SCH_ARBITRATION_MODE SCH_ARBITRATION_MODE_MANUAL
+
+/**
+ * @brief Turning on/off the events. There're options:
+ * On (SCH_EVENTS_ON)
+ * Off (SCH_EVENTS_OFF)
+ * 
+ */
+#define SCH_EVENTS_STATE SCH_EVENTS_OFF
 
 #ifdef __cplusplus
 }

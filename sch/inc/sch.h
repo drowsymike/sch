@@ -14,7 +14,7 @@
 extern "C" {
 #endif
 
-#include <stdio.h>
+#include <stddef.h>
 #include <stdint.h>
 
 #include "sch_config.h"
@@ -22,6 +22,14 @@ extern "C" {
 #include "sch_common.h"
 #include "sch_task_management.h"
 #include "sch_event_management.h"
+
+/*--Functions----------------------------------------------------------------*/
+
+/**
+ * @brief Wrapper function for starting the arbitraging the processes
+ * 
+ */
+uint8_t sch_run(void);
 
 #ifdef __cplusplus
 }

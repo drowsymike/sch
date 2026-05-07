@@ -9,7 +9,7 @@
 #ifndef SCH_COMMON_H
 #define SCH_COMMON_H
 
-#include <cstdint>
+#include <stdint.h>
 #ifdef __cplusplus
 extern "C" {
 #endif
